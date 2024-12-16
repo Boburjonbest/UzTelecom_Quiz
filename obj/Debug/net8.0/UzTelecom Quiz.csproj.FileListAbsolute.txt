@@ -7,6 +7,7 @@ D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\UzTelecom Quiz.
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\UzTelecom Quiz.pdb
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\BCrypt.Net-Core.dll
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Humanizer.dll
+D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Microsoft.Build.Locator.dll
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
@@ -29,9 +30,19 @@ D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Microsoft.Exten
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Microsoft.OpenApi.dll
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Mono.TextTemplating.dll
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Npgsql.dll
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\System.CodeDom.dll
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\System.Composition.AttributedModel.dll
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\System.Composition.Convention.dll
@@ -39,6 +50,7 @@ D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\System.Composit
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\System.Composition.Runtime.dll
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\System.Composition.TypedParts.dll
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\System.IO.Pipelines.dll
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\System.Text.Encodings.Web.dll
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\System.Text.Json.dll
@@ -113,7 +125,9 @@ D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\obj\Debug\net8.0\UzTelecom Quiz.
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\obj\Debug\net8.0\UzTelecom Quiz.AssemblyInfoInputs.cache
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\obj\Debug\net8.0\UzTelecom Quiz.AssemblyInfo.cs
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\obj\Debug\net8.0\UzTelecom Quiz.csproj.CoreCompileInputs.cache
+D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\obj\Debug\net8.0\UzTelecom Quiz.MvcApplicationPartsAssemblyInfo.cs
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\obj\Debug\net8.0\UzTelecom Quiz.MvcApplicationPartsAssemblyInfo.cache
+D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\obj\Debug\net8.0\UzTelecom Quiz.sourcelink.json
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\obj\Debug\net8.0\staticwebassets.build.json
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\obj\Debug\net8.0\staticwebassets.development.json
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\obj\Debug\net8.0\staticwebassets\msbuild.UzTelecom Quiz.Microsoft.AspNetCore.StaticWebAssets.props
