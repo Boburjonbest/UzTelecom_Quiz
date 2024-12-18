@@ -11,7 +11,8 @@ namespace UzTelecom_Quiz.Data
         }
 
         public DbSet<User> Users { get; set;}
-        public DbSet<Password> Passwords { get; set;}
+        public DbSet<Register> Registers { get; set;}
+        public DbSet<Login> Logins { get; set;}
         
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -21,6 +22,9 @@ namespace UzTelecom_Quiz.Data
             modelBuilder.Entity<User>()
                 .HasIndex(u => u.username)
                 .IsUnique();
+
+            modelBuilder.Entity<Register>().HasIndex(l => l.Username).IsUnique();
+            modelBuilder.Entity<Login>().HasIndex(a => a.Username).IsUnique();
         }
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UzTelecom Quiz")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f423a7d09a185388acbe2fe56ebe9f11a75a1d58")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d45cd4a3cf8c9704c8e60a5674284d8ea211f4b2")]
 [assembly: System.Reflection.AssemblyProductAttribute("UzTelecom Quiz")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UzTelecom Quiz")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

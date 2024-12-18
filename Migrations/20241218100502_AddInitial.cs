@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
@@ -7,24 +6,38 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace UzTelecom_Quiz.Migrations
 {
     /// <inheritdoc />
-    public partial class AddInitialCreate : Migration
+    public partial class AddInitial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Passwords",
+                name: "Logins",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    UserId = table.Column<int>(type: "integer", nullable: false),
-                    PasswordHash = table.Column<string>(type: "text", nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                    Username = table.Column<string>(type: "text", nullable: false),
+                    Password = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Passwords", x => x.Id);
+                    table.PrimaryKey("PK_Logins", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Registers",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Username = table.Column<string>(type: "text", nullable: false),
+                    Password = table.Column<string>(type: "text", nullable: false),
+                    Role = table.Column<string>(type: "text", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Registers", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -47,6 +60,18 @@ namespace UzTelecom_Quiz.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_Logins_Username",
+                table: "Logins",
+                column: "Username",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Registers_Username",
+                table: "Registers",
+                column: "Username",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Users_username",
                 table: "Users",
                 column: "username",
@@ -57,7 +82,10 @@ namespace UzTelecom_Quiz.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Passwords");
+                name: "Logins");
+
+            migrationBuilder.DropTable(
+                name: "Registers");
 
             migrationBuilder.DropTable(
                 name: "Users");

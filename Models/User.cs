@@ -15,5 +15,7 @@ namespace UzTelecom_Quiz.Models
         public string jobtitle { get; set; }
         [JsonIgnore]
         public bool IsPhoneNumberConfirmed { get; set; }
+        
+        
     }
 }
