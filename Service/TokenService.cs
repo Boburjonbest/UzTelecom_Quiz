@@ -16,25 +16,18 @@ namespace UzTelecom_Quiz.Service
 
         public string GenerateToken(string username, string role)
         {
-            var secret = "Boburjonbestverymylocationdubai12345";
-            var expirationTime = "60";
+            var claims = new List<Claim>()
+           {
+               new Claim(ClaimTypes.Name, username),
+               new Claim(ClaimTypes.Role, role)
+           };
 
-            if(string.IsNullOrEmpty(expirationTime))
-            {
-                throw new ArgumentNullException("expirationTime", "Expiration time null bolish keremas. ");
-            }
-
-            var expirationTimeInSeconds = 0.0;
-            if(!double.TryParse(expirationTime, out expirationTimeInSeconds))
-            {
-                throw new ArgumentException("Expiration time valid number bolishga majbur.");
-            }
-
-            var token = new JwtSecurityToken(
-                issuer: "Issuer",
-                audience: "Audience",
-                expires: DateTime.UtcNow.AddSeconds(expirationTimeInSeconds),
-                signingCredentials: new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret)), SecurityAlgorithms.HmacSha256));
+           var token = new JwtSecurityToken(
+               issuer: "Issuer",
+               audience: "Audience",
+               claims: claims,
+               expires: DateTime.UtcNow.AddDays(7),
+               signingCredentials: new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Boburjonbestverymylocationdubai12345")), SecurityAlgorithms.HmacSha256));
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }

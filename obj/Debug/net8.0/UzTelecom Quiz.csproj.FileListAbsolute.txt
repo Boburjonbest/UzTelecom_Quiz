@@ -142,3 +142,5 @@ D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\obj\Debug\net8.0\refint\UzTeleco
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\obj\Debug\net8.0\UzTelecom Quiz.pdb
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\obj\Debug\net8.0\UzTelecom Quiz.genruntimeconfig.cache
 D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\obj\Debug\net8.0\ref\UzTelecom Quiz.dll
+D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\QUIZ UZTELECOM\UzTelecom Quiz\UzTelecom Quiz\bin\Debug\net8.0\NgrokAspNetCore.Lib.dll

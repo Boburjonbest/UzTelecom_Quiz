@@ -11,8 +11,8 @@ using UzTelecom_Quiz.Data;
 namespace UzTelecom_Quiz.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241218100502_AddInitial")]
-    partial class AddInitial
+    [Migration("20241219121100_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

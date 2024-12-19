@@ -1,4 +1,5 @@
 ﻿using BCrypt.Net;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -24,7 +25,10 @@ namespace UzTelecom_Quiz.Controller
             _tokenService = tokenService;
             _context = context;
         }
+       
         [HttpPost("CreateUser")]
+        [Authorize(Roles = "Admin")]
+        
         public async Task<IActionResult> CreateUser([FromBody] User user)
         {
             if (!ModelState.IsValid) 
@@ -41,8 +45,9 @@ namespace UzTelecom_Quiz.Controller
                 return BadRequest(new {message = ex.Message});
             }
         }
-
+        
         [HttpPost("Register")]
+        [AllowAnonymous]
         public async Task<IActionResult> Register([FromBody] Register register)
         {
            if(register == null || string.IsNullOrEmpty(register.Username) || string.IsNullOrEmpty(register.Password))
@@ -74,7 +79,10 @@ namespace UzTelecom_Quiz.Controller
             return Ok("Foydalanuvchi muvaffaqiyatli ro`yhatdan o`tdi");  
         }
 
+      
         [HttpPost("Login")]
+        [AllowAnonymous]
+        
         public async Task<IActionResult> Login([FromBody] Login login)
         {
             if(login == null || string.IsNullOrEmpty(login.Username) || string.IsNullOrEmpty(login.Password))
@@ -95,13 +103,27 @@ namespace UzTelecom_Quiz.Controller
                 return Unauthorized("Xato Username yoki Password");
             }
 
-            var token = _tokenService.GenerateToken(login.Username, user.Role);
+            var existingLogin = await _context.Logins
+                .FirstOrDefaultAsync(l => l.Username == login.Username);
+
+            if(existingLogin != null)
+            {
+                var token = _tokenService.GenerateToken(login.Username, user.Role);
+                return Ok(new
+                {
+                    Token = token,
+                    Role = user.Role
+                });
+            }
 
             _context.Logins.Add(login);
             await _context.SaveChangesAsync();
 
+            var newToken = _tokenService.GenerateToken(login.Username, user.Role);
+            
+
             return Ok(new { 
-                Token = token,
+                Token = newToken,
                 Role = user.Role
                 
             });
